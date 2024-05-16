@@ -1,61 +1,53 @@
 {
-    "name": "whitecube/nova-page",
-    "description": "Static pages content management for Laravel Nova",
-    "license": "MIT",
-    "keywords": [
-        "laravel",
-        "nova",
-        "cms",
-        "page",
-        "content",
-        "wysiwyg",
-        "flatfile"
-    ],
-    "authors": [
-        {
-            "name": "Toon Van den Bos",
-            "email": "toon@whitecube.be"
-        },
-        {
-            "name": "Adrien Leloup",
-            "email": "adrien@whitecube.be"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        }
-    ],
-    "require": {
-        "php": "^7.3|^8.0",
-        "laravel/nova": "^4.0",
-        "orchestra/testbench": "^8.5"
+  "name": "whitecube/nova-page",
+  "description": "Static pages content management for Laravel Nova",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "nova",
+    "cms",
+    "page",
+    "content",
+    "wysiwyg",
+    "flatfile"
+  ],
+  "authors": [
+    {
+      "name": "Toon Van den Bos",
+      "email": "toon@whitecube.be"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^10.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Whitecube\\NovaPage\\": "src/",
-            "Tests\\": "tests/",
-            "FakeTestApp\\": "tests/test-application/app"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Whitecube\\NovaPage\\NovaPageServiceProvider",
-                "Whitecube\\NovaPage\\NovaPageToolServiceProvider"
-            ],
-            "aliases": {
-                "Page": "Whitecube\\NovaPage\\NovaPageFacade"
-            }
-        }
+    {
+      "name": "Adrien Leloup",
+      "email": "adrien@whitecube.be"
     }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://nova.laravel.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "laravel/nova": "^4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Whitecube\\NovaPage\\NovaPageServiceProvider",
+        "Whitecube\\NovaPage\\NovaPageToolServiceProvider"
+      ],
+      "aliases": {
+        "Page": "Whitecube\\NovaPage\\NovaPageFacade"
+      }
+    }
+  }
 }
